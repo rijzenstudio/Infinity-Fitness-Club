@@ -133,20 +133,28 @@
                 </div>
                 <div class="contact-form animate-slide-right">
                     <h3>Send Us a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Your Phone">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+
+                      <input type="hidden" name="access_key" value="c39f2ede-6df5-4a67-a286-952090c6f921">
+                    
+                      <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+                    
+                      <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                      </div>
+                      
+                      <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                      </div>
+                      
+                      <div class="form-group">
+                        <input type="tel" name="phone" id="phone" placeholder="Your Phone">
+                      </div>
+                      
+                      <div class="form-group">
+                        <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
                     </form>
                 </div>
             </div>
